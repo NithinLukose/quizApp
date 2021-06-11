@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin:0;
+}
+
+body{
+    background-color: #bdd4e7;
+    background-image: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    min-height:100vh;
+}
+
+.quiz-container{
+    background-color: white;
+    width:90vw;
+    height:auto;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px 5px rgba(100,100,100,0.1);
+}
+
+.quiz-header{
+    height: 20vh;
+    background-color: #007ea7;
+    background-image: linear-gradient(315deg, #007ea7 0%, #80ced7 74%);
+    padding: 2rem;
+}
+
+.quiz-header h1{
+    color:white;
+    font-size: 1.3rem;
+}
+
+.question-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:90%;
+    margin: auto;
+    padding-bottom: 2rem;
+    
+}
+.question{
+    margin-top: -2rem;
+    background-color: white;
+    width:100%;
+    border-radius: 5px;
+    padding: 2rem;
+    box-shadow: 0 0 10px 5px rgba(100,100,100,0.1);
+}
+
+ul{
+    margin-top: 0.5rem;
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li:not(:first-child){
+    margin-top: 0.5rem;
+}
+.question-text{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.answer-option-text{
+    font-size: 0.8rem;
+    font-weight: normal;
+    margin-top: 1rem;
+    margin-bottom: 0.7rem;
+}
+
+.button-group{
+    margin-top: 1rem;
+}
+
+.previous-btn{
+    border:none;
+    padding: 1rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color:#007ea7;
+    width: 49%;
+    background-color: white; 
+    border:2px solid #007ea7;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.previous-btn:disabled{
+    background-color: #dddddd;
+    border: 2px solid #dddddd;
+    color: rgb(112, 111, 112);
+}
+
+.next-btn{
+    border:none;
+    padding: 1.2rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color:white;
+    width: 49%;
+    background-color: #00bfb2;
+    background-image: linear-gradient(315deg, #00bfb2 0%, #028090 74%);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+
+@media only screen and (min-width:600px){
+    .quiz-container{
+        width:60vw;
+    }
+}
